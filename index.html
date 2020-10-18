@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" class="js" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/738aec2dad.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Double slider</title>
+  </head>
+  <body>
+    <div class="pageContainer relative">
+      <div class="signInAppAndsignUpApp">
+        <section class="sectionsContainers absolute signin">
+          <div class="sectionsContainers_container">
+            <h1>Sign In</h1>
+            <div class="icons">
+              <div
+                class="icon"
+                onclick="location.href='https://www.facebook.com/'"
+              >
+                <i class="fab fa-facebook-f fa-1x facebookIconPosition"></i>
+              </div>
+              <div
+                class="icon"
+                onclick="location.href='https://www.google.com/'"
+              >
+                <i class="fab fa-google-plus-g googleIconPosition"></i>
+              </div>
+              <div
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/'"
+              >
+                <i class="fab fa-linkedin-in linkedinIconPosition"></i>
+              </div>
+            </div>
+            <div class="inputContainer">
+              <input
+                type="email"
+                placeholder=" "
+                class="inputTextStyle"
+                id="emailSigninApp"
+                required
+              />
+              <label for="emailSigninApp">email</label>
+              <div class="border"></div>
+            </div>
+            <div class="inputContainer">
+              <input
+                type="password"
+                placeholder=" "
+                class="inputTextStyle"
+                id="passwordSigninApp"
+                required
+              />
+              <label for="passwordSigninApp">password</label>
+              <div class="border"></div>
+            </div>
+            <a href="url">Forgot your password?</a>
+            <input type="submit" value="sign in" class="submiteButton" />
+          </div>
+        </section>
+        <section class="sectionsContainers absolute signup">
+          <div class="sectionsContainers_container">
+            <h1>Create Account</h1>
+            <div class="icons">
+              <div
+                class="icon"
+                onclick="location.href='https://www.facebook.com/'"
+              >
+                <i class="fab fa-facebook-f fa-1x facebookIconPosition"></i>
+              </div>
+              <div
+                class="icon"
+                onclick="location.href='https://www.google.com/'"
+              >
+                <i class="fab fa-google-plus-g googleIconPosition"></i>
+              </div>
+              <div
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/'"
+              >
+                <i class="fab fa-linkedin-in linkedinIconPosition"></i>
+              </div>
+            </div>
+            <p>Or use your email for registration</p>
+            <div class="inputContainer">
+              <input
+                type="text"
+                class="inputTextStyle"
+                id="nameSignupApp"
+                required
+              />
+              <label for="nameSignupApp">Name</label>
+              <div class="border"></div>
+            </div>
+            <div class="inputContainer">
+              <input
+                type="email"
+                placeholder=" "
+                class="inputTextStyle"
+                id="emailSignupApp"
+                required
+              />
+              <label for="emailSignupApp">Email</label>
+              <div class="border"></div>
+            </div>
+            <div class="inputContainer">
+              <input
+                type="password"
+                placeholder=" "
+                class="inputTextStyle"
+                id="passwordSignupApp"
+                required
+              />
+              <label for="passwordSignupApp">Password</label>
+              <div class="border"></div>
+            </div>
+
+            <input type="submit" value="sign up" class="submiteButton" />
+          </div>
+        </section>
+      </div>
+
+      <!-- the red pages -->
+      <div class="signInPageAndsignUpPage">
+        <section class="sectionsContainers_redpages absolute signinPg">
+          <div class="signInPage">
+            <h1>Welcome Back!</h1>
+            <p>
+              To keep connected with us please login with your personal info
+            </p>
+            <input
+              type="submit"
+              value="sign in"
+              class="submiteButton"
+              id="signin"
+            />
+          </div>
+        </section>
+        <section class="sectionsContainers_redpages absolute signupPg">
+          <div class="signInPage">
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start your journey with us</p>
+            <input
+              type="submit"
+              value="sign up"
+              class="submiteButton"
+              id="signup"
+            />
+          </div>
+        </section>
+      </div>
+      <!-- the red background -->
+      <div class="absolute none theredbackground"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
